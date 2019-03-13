@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Oxycoin Kraken Balances">
+  <meta name="author" content="KrakenBalances">
+  <title>SMART CONTRACT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">  
+  <div id="contact">
+    <h3>Generate Smart Contract</h3>
+    <h4>Contact <a href="https://twitter.com/@crypt0jan" target="_blank">@crypt0jan</a> for changes to the form.</h4>
+    <fieldset>
+      <input placeholder="Symbol to use (e.g. OXY, BTC, ETH)" id="contract-symbol" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Contract name (e.g. Oxycoin, Bitcoin, Ethereum)" id="contract-name" type="text" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Number of decimals to support (default: 18)" id="contract-decimals" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Amount of tokens to generate (e.g. 1000, 2000, 100000)" id="contract-amount" type="tel" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Contract ByteCode will appear here..." tabindex="5" id="bytecode"></textarea>
+    </fieldset>
+    <div id="versions">0.4.25</div>
+    <fieldset>
+      <button name="submit" class="submit-name" id="contract-compile" data-submit="...Generating">Generate</button>
+    </fieldset>
+  </div>
+</div>
+
+  <script src="sc-1.js" type="text/javascript"></script>
+  <script src="sc-2.js" type="text/javascript"></script>
+  <script src="libs/solc.min.js" type="text/javascript"></script>
+  <script src="libs/web3.min.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
